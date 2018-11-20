@@ -13,6 +13,7 @@ class CDApi extends CD implements IApi{
         $ed = $datos['ed'];
         $unCD = CD::agregarCD($tit, $inte, $ed);
         $newResponse = $response->withStatus(200);
+        
         return $newResponse;
 
     }
